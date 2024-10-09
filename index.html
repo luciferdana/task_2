@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Lomba Drag Motor Nasional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pendaftaran Lomba Drag Motor Nasional</h1>
+        <form action="detail.php" method="GET">
+            <label for="name">Nama Peserta:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="nomor_peserta">Nomor Peserta:</label>
+            <input type="text" id="nomor_peserta" name="nomor_peserta" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="kategori_lomba">Kelas Lomba:</label>
+            <select id="kategori_lomba" name="kategori_lomba" required>
+                <option value="Campuran 250 cc 2 Langkah Tune Up">Campuran 250 cc 2 Langkah Tune Up (80 cc - 250 cc)</option>
+                <option value="Bebek 125 cc 4 Langkah Tune Up">Bebek 125 cc 4 Langkah Tune Up (80 cc - 130 cc)</option>
+                <option value="Sport 150 cc 2 Langkah Tune Up">Sport 150 cc 2 Langkah Tune Up (135 cc - 155 cc)</option>
+                <option value="Bebek 125 cc 2 Langkah Tune Up">Bebek 125 cc 2 Langkah Tune Up (80 cc - 125 cc)</option>
+            </select>
+
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+</body>
+</html>
